@@ -1,0 +1,32 @@
+/* background: #FFFFFF білий фон сторінки і адреса у футері  і заголовок Хіро;
+#2196F3 синій колір тексту лого і ховер
+#000000 чорний текст лого
+ #212121 чорний колір заголовків і навігації головної
+#757575 сірий колір контактів і абзаців
+#2F303A колір фону футера і фону секції героя
+rgba(255, 255, 255, 0, 6) колір контактів у футері
+фон секції наша команда F5F4FA
+*/
+:root{
+--page-color: #FFFFFF;
+--page-alfa-color: rgba(255, 255, 255, 0.6);
+--logo-color: #000000;
+--main-color: #212121;
+--text-color: #757575;
+--style-color: #2196F3;
+--section-color: #F5F4FA;
+}
+
+
+/* 
+Raleway bolt
+Roboto 500
+Roboto 900
+Roboto bolt
+Roboto normal
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+
+*/
