@@ -7,6 +7,15 @@
 rgba(255, 255, 255, 0, 6) колір контактів у футері
 фон секції наша команда F5F4FA
 */
+
+/* 
+Raleway bolt
+Roboto 500
+Roboto 900
+Roboto bolt
+Roboto normal
+
+*/
 :root{
 --page-color: #FFFFFF;
 --cont-alfa-color: rgba(255, 255, 255, 0.6);
@@ -24,15 +33,146 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* 
-Raleway bolt
-Roboto 500
-Roboto 900
-Roboto bolt
-Roboto normal
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* Стилізую Хедер */
+.logo{
+    color: var(--style-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.logo span{
+    color: var(--logo-color);
+}
+.hat-nav-list{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.hat-nav .link{
+    color:inherit;
+}
+
+.hat-list .link {
+    color: var(--indent-color);
+}
 
 
 
-*/
+/* Стилі Хіро */
+
+.hero-title{
+color: var(--page-color);
+background-color:grey;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
+.hero-button{
+    color: var(--page-color);
+    background-color: var(--style-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+background-color:var(--button-hower-color);
+
+}
+
+
+/* Стилі секції Особливості */
+
+.list-title{
+
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.paragraph{
+    color: var(--indent-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+/* Стилі секції Наша команда */
+.team{
+    background-color: var(--section-color);
+}
+.section-title{
+
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.card{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.list-name{
+font-weight: 500;
+}
+
+.prof{
+    color: var(--indent-color); 
+}
+
+
+/* Стить футера */
+
+
+.lowerPart{
+background-color: #2F303A;
+}
+
+address{
+    font-style: normal;
+}
+
+.add{
+color: var(--page-color);
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+}
+
+.contact-list .link{
+
+    color:var(--cont-alfa-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--style-color)
+}
