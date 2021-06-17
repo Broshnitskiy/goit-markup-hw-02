@@ -1,5 +1,4 @@
 
-
 :root{
 --page-color: #FFFFFF;
 --cont-alfa-color: rgba(255, 255, 255, 0.6);
@@ -29,7 +28,8 @@ body{
 .list{
     list-style: none;
 }
-/*-- Стилізую Хедер --*/
+
+/*-- Стилі Хедера --*/
 
 .logo{
     color: var(--style-color);
@@ -38,10 +38,10 @@ body{
     line-height: 1.2;
    
 }
+
 .logo span{
     color: var(--logo-color);
 }
-
 
 .menu-link{
     color:inherit;
@@ -63,9 +63,7 @@ body{
 }
 
 
-
-
-/* Стилі Хіро */
+/* Стилі секції Хіро */
 
 .hero{
     background-color: #2F303A
@@ -114,10 +112,8 @@ body{
 }
 
 
- /* Стилі Секції Приклади робіт  */
 
-
-/* Стилі секції  Команда */
+/* Стилі секції Приклади робіт і секції Команда */
 
 .team{
     background-color: var(--section-color);
@@ -187,7 +183,7 @@ body{
 }
 
 
-/* Стить футера */
+/* Стилі футера */
 
 
 .lowerPart{
