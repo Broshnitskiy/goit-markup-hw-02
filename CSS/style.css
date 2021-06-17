@@ -1,21 +1,5 @@
-/* background: #FFFFFF білий фон сторінки і адреса у футері  і заголовок Хіро;
-#2196F3 синій колір тексту лого і ховер
-#000000 чорний текст лого
- #212121 чорний колір заголовків і навігації головної
-#757575 сірий колір контактів і абзаців
-#2F303A колір фону футера і фону секції героя
-rgba(255, 255, 255, 0, 6) колір контактів у футері
-фон секції наша команда F5F4FA
-*/
 
-/* 
-Raleway bolt
-Roboto 500
-Roboto 900
-Roboto bolt
-Roboto normal
 
-*/
 :root{
 --page-color: #FFFFFF;
 --cont-alfa-color: rgba(255, 255, 255, 0.6);
@@ -25,120 +9,134 @@ Roboto normal
 --style-color: #2196F3;
 --button-hower-color: #188CE8;
 --section-color: #F5F4FA;
+
+--main-font: 'Roboto', sans-serif;
+--another-font: 'Raleway', sans-serif;
 }
 
 body{
     color: var(--grand-color);
     background-color: var(--page-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
-a{
+.link{
     text-decoration: none;
 }
 
-ul{
+.list{
     list-style: none;
 }
-/* Стилізую Хедер */
+/*-- Стилізую Хедер --*/
+
 .logo{
     color: var(--style-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--another-font);
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
+   
 }
 .logo span{
     color: var(--logo-color);
 }
-.hat-nav-list{
+
+
+.menu-link{
+    color:inherit;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.hat-nav .link{
-    color:inherit;
+.menu-link.select,
+.filter-button.current {
+    color: var(--style-color);
 }
 
-.hat-list .link {
+.hat .contact-list-link {
     color: var(--indent-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
+
 
 
 
 /* Стилі Хіро */
 
+.hero{
+    background-color: #2F303A
+}
+
 .hero-title{
-color: var(--page-color);
-background-color:grey;
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+    color: var(--page-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .hero-button{
     color: var(--page-color);
     background-color: var(--style-color);
-    font-family: Roboto;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-background-color:var(--button-hower-color);
+    background-color:var(--button-hower-color);
 
 }
 
 
 /* Стилі секції Особливості */
 
-.list-title{
-
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+.feature-item-title {
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .paragraph{
     color: var(--indent-color);
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 
-/* Стилі секції Наша команда */
+ /* Стилі Секції Приклади робіт  */
+
+
+/* Стилі секції  Команда */
+
 .team{
     background-color: var(--section-color);
 }
-.section-title{
 
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
+.section-title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 .card{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
-.list-name{
-font-weight: 500;
+.team-member {
+    font-weight: 500;
 }
 
 .prof{
@@ -146,33 +144,74 @@ font-weight: 500;
 }
 
 
+
+/* Стилі Портфоліо */
+
+.filter-button{
+    color: inherit;
+    background-color: var(--section-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: inherit;
+    cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--page-color);
+    background-color: var(--style-color);
+}
+
+
+.port-head{
+    color: var(--grand-color);
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.port-disc{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--indent-color);
+}
+
+.port-head:hover,
+.port-head:focus,
+.port-disc:hover,
+.port-disc:focus {
+    color:var(--style-color);
+}
+
+
 /* Стить футера */
 
 
 .lowerPart{
-background-color: #2F303A;
+    background-color: #2F303A;
 }
 
 address{
     font-style: normal;
 }
 
+
 .add{
-color: var(--page-color);
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-}
-
-.contact-list .link{
-
-    color:var(--cont-alfa-color);
-    font-size: 14px;
+    color: var(--page-color);
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
-.link:hover,
-.link:focus {
+.contact-list .contact-list-link {
+    color:var(--cont-alfa-color);
+    line-height: 1.71;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.contact-list-link:hover,
+.contact-list-link:focus {
     color: var(--style-color)
 }
