@@ -39,7 +39,7 @@ body{
    
 }
 
-.logo span{
+.logo-accent-hat{
     color: var(--logo-color);
 }
 
@@ -188,6 +188,10 @@ body{
 
 .lowerPart{
     background-color: #2F303A;
+}
+
+.logo-accent-footer{
+    color: var(--page-color);
 }
 
 address{
